@@ -22,8 +22,7 @@ import lombok.RequiredArgsConstructor;
 public class SacolaServiceImpl implements SacolaService {
     private final SacolaRepository sacolaRepository;
     private final ProdutoRepository produtoRepository;
-    private final ItemRepository itemRepository;
-
+    
     @Override
     public Sacola fecharSacola(Long id, int numeroFormaPagamento) {
         Sacola sacola = verSacola(id);
