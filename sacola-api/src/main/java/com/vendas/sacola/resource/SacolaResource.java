@@ -14,8 +14,10 @@ import com.vendas.sacola.model.Sacola;
 import com.vendas.sacola.resource.dto.ItemDto;
 import com.vendas.sacola.service.SacolaService;
 
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 
+@Api(value="/ifood/api/sacolas")
 @RestController
 @RequestMapping("/ifood/api/sacolas")
 @RequiredArgsConstructor
